@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className=" Container mx-auto mt-8 flex flex-col justify-center items-center ">
-       <h1 className='text-5xl font-bold text-[#333333] '>Classic Weather </h1>
+       <h1 className='text-3xl md:text-5xl font-bold text-[#333333] '>Classic Weather </h1>
        <Search val={weatherData.location} onSearch={searchlocation} onGetWeather={fetchWeather}/>
         {weatherData.loading && <RotatingLines
   visible={true}
